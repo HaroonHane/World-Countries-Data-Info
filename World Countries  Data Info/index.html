@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="Countries info" content="Search by just country name and it give you the info about that searched country">
+     <meta name="keywords" content="countries info countries data info world">
+     <meta author="Hane" content="Developed By HSS Services">
+    <link rel="shortcut icon" href="pngegg.png" type="image/x-icon" />
+    <title>Countries Infos</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<header>
+  <h2>Countries Infos</h2>
+  <input
+  id="userSearchInputField"
+    type="text"
+    name="search"
+    placeholder="Search By Country Name"
+    oninput="searchItem(this)"
+  />
+</header>
+<main>
+  <div id="countriesList" class="country-List-Style">
+    <div class="loadingAnimation">
+       <strong>Loading...Please wait a while</strong>
+      <p></p>
+    </div>
+  </div>
+  <div class="specificCountryData">
+  </div>
+  
+</main>
+
+<script src="./app.js"></script>
+  </body>
+</html>
